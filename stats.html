@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="utf-8">
+    	<title>ScoreKeeper - Game Tracker</title>
+
+	    <!-- Sets initial viewport load and disables zooming  -->
+	    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	    <!-- Set Apple icons for when prototype is saved to home screen -->
+	    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+	    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+	    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+
+	    <!-- Include the compiled CSS -->
+	    <link rel="stylesheet" href="ratchet.css">
+		<link rel="stylesheet" href="scorekeeper.css">
+	    <!-- Include the compiled JS -->
+	    <script type="text/javascript" src="ratchet.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+		<script type="text/javascript" src="scorekeeper.js"></script>
+	    <!-- Intro paragraph styles. Delete once you start using this page -->	  		
+		</script>
+		<style>
+			.stats {
+				padding-top: 20px;
+				padding-bottom: 20px;
+				margin: 0;
+				width: 100%;
+				height: auto;
+				background-color: #D8D8D8;
+				display: inline-block;
+			}
+				.stats div {
+					width: 33.33333%;
+					text-align: center;
+					max-width: 33%;
+					float: left;
+				}
+			.stats-b {
+				padding-top: 20px;
+				padding-bottom: 20px;
+				margin: -4px 0px !important;
+				width: 100%;
+				height: auto;
+				background-color: ;
+				display: inline-block;
+			}
+			.stats-b div {
+				width: 33.33333%;
+				text-align: center;
+				max-width: 33%;
+				float: left;
+			}
+		</style>
+  </head>
+  <body>
+	  	<!-- Make sure all your bars are the first things in your <body> -->
+	  	<header class="bar-title">
+	  		<a class="button-prev" href="#">
+				Back
+			</a>
+	  		<h1 class="title">Team A Stats</h1>
+	  	</header>
+
+	  	<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+		<div class="content" style="height: auto;">
+			<div class="stats">
+				<div>
+					<span class="count">4</span>
+				</div>
+				<div>
+					<p> Stats 1 </p>
+				</div>
+				<div>
+					<span class="count">4</span>
+				</div>
+			</div>
+			<div class="stats-b">
+				<div>
+					<span class="count">4</span>
+				</div>
+				<div>
+					<p> Stats 1 </p>
+				</div>
+				<div>
+					<span class="count">4</span>
+				</div>
+			</div>
+		</div>
+  </body>
+</html>

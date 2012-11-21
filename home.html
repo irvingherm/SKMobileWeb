@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ScoreKeeper - Sport Selector</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Set Apple icons for when prototype is saved to home screen -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+
+    <!-- Include the compiled CSS -->
+    <link rel="stylesheet" href="ratchet.css">
+	<link rel="stylesheet" href="scorekeeper.css">
+	
+    <!-- Include the compiled Ratchet JS -->
+    <script src="ratchet.js"></script>
+  </head>
+  <body>
+  <!-- Make sure all your bars are the first things in your <body> -->
+  <header class="bar-title">
+    <h1 class="title">ScoreKeeper</h1>
+  </header>
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+  <div class="content">
+  	<div class="content-padded">
+      <p class="welcome" style="text-align: center;">Keep track of your game results and stats</p>
+    </div>
+    <ul class="list inset" style="margin-top: 30px;">
+      <li>
+        <a href="#">
+        	<img src="http://icons.iconarchive.com/icons/icons-land/sport/256/Tennis-Ball-icon.png" alt="tennis" />
+          	<strong class="sport-name">Tennis</strong>
+          	<span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="soccer.html" data-transition="slide-in">
+        	<img src="http://icons.iconarchive.com/icons/icons-land/sport/256/Soccer-Ball-icon.png" alt="soccer" />
+          	<strong class="sport-name">Soccer</strong>
+          	<span class="chevron"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+        	<img src="http://icons.iconarchive.com/icons/icons-land/sport/256/Basketball-Ball-icon.png" alt="basketball" />
+          	<strong class="long-name">Basketball</strong>
+          	<span class="chevron"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ScoreKeeper - Game Tracker</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Set Apple icons for when prototype is saved to home screen -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+
+    <!-- Include the compiled CSS -->
+    <link rel="stylesheet" href="ratchet.css">
+	<link rel="stylesheet" href="scorekeeper.css">
+    <!-- Include the compiled JS -->
+    <script type="text/javascript" src="ratchet.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+	<script type="text/javascript" src="scorekeeper.js"></script>
+    <!-- Intro paragraph styles. Delete once you start using this page -->	  		
+	</script>
+  </head>
+  <body>
+  <!-- Make sure all your bars are the first things in your <body> -->
+  <header class="bar-title game-bar">
+  	<div>
+		<a class="but-none-left" href="tracker.html" data-transition="slide-in">H</a>
+		<div class="team-score">5</div>
+	</div>
+	<div style="text-align: center; width: 100%; margin-left: -12%; margin-top: 4%;">
+		<a class="but-none-center" href="tracker.html" data-transition="slide-in">00:00</a>
+	</div>
+	<div>
+		<a class="but-none-right" href="tracker.html" data-transition="slide-in">A</a><br>
+		<div class="team-score" style="right: 40px;">4</div>
+	</div>
+  </header>
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+	  <div class="content" style="top: 70px; height: 100%">
+		<div style="width: 49%; height: auto; float: left; border-right: 1px solid;">
+			<ul class="list">
+			</ul>
+		</div>
+		<div style="width: 49%; height: auto; float: left;">
+			<ul class="list">
+			</ul>
+		</div>
+	  </div>
+	  <div id="myPopover" style="top: 90px;"class="popover">
+		  <header class="popover-header">
+		    <h3 class="title">Player Name</h3>
+		    <a class="button" href="#">
+		      Undo
+		    </a>
+		  </header>
+		  <div id="stats" class="pop-body" >
+		  </div>
+	</div>
+  </body>
+</html>
