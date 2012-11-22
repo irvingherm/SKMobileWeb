@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>ScoreKeeper - Game Tracker</title>
 
-    <?php include'include.html' ?>
+    <?php include'../assets/include.html' ?>
   </head>
   <body>
   <!-- Make sure all your bars are the first things in your <body> -->

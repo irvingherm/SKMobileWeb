@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>ScoreKeeper - Sport Selector</title>
-
-    <?php include'include.html' ?>
+    <?php include'../assets/include.html' ?>
   </head>
   <body>
   <!-- Make sure all your bars are the first things in your <body> -->
@@ -20,21 +19,22 @@
     <ul class="list inset" style="margin-top: 30px;">
       <li>
         <a href="#">
-        	<img src="http://icons.iconarchive.com/icons/icons-land/sport/256/Tennis-Ball-icon.png" alt="tennis" />
+        	  <img src="http://icons.iconarchive.com/icons/icons-land/sport/256/Tennis-Ball-icon.png" alt="tennis" />
           	<strong class="sport-name">Tennis</strong>
           	<span class="chevron"></span>
         </a>
       </li>
       <li>
-        <a href="soccer.html" data-transition="slide-in">
-        	<img src="http://icons.iconarchive.com/icons/icons-land/sport/256/Soccer-Ball-icon.png" alt="soccer" />
+        <!-- A soccer.php link -->
+        <a href="soccer.php" data-transition="slide-in">
+        	  <img src="http://icons.iconarchive.com/icons/icons-land/sport/256/Soccer-Ball-icon.png" alt="soccer" />
           	<strong class="sport-name">Soccer</strong>
           	<span class="chevron"></span>
         </a>
       </li>
       <li>
         <a href="#">
-        	<img src="http://icons.iconarchive.com/icons/icons-land/sport/256/Basketball-Ball-icon.png" alt="basketball" />
+        	  <img src="http://icons.iconarchive.com/icons/icons-land/sport/256/Basketball-Ball-icon.png" alt="basketball" />
           	<strong class="long-name">Basketball</strong>
           	<span class="chevron"></span>
         </a>

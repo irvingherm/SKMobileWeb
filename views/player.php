@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>ScoreKeeper - Team Player Menu</title>
 
-    <?php include'include.html' ?>	
+    <?php include'../assets/include.html' ?>
   </head>
   <body>
 
