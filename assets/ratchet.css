@@ -9,86 +9,13 @@
 /* Hard reset
 -------------------------------------------------- */
 
-html,
-body,
-div,
-span,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-section,
-summary,
-time,
-audio,
-video {
+html, body, div, span,iframe,h1,h2,h3,h4,h5,h6,p,blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, audio, video {   
   padding: 0;
-  margin: 0;
-  border: 0;
+  margin: 0;   
+  border: 0; 
 }
 
 /* Prevents iOS text size adjust after orientation change, without disabling (Thanks to @necolas) */
@@ -335,8 +262,8 @@ a {
   background-color: #0876b1;
 }
 
-/* Directional buttons in title bars (thanks to @GregorAdams for solution - http://cssnerd.com/2011/11/30/the-best-pure-css3-ios-style-arrow-back-button/)
--------------------------------------------------- */
+/* Directional buttons in title bars (thanks to @GregorAdams for solution - http://cssnerd.com/2011/11/30/the-best-pure-
+css3-ios-style-arrow-back-button/) -------------------------------------------------- */
 
 /* Add relative positioning so :before content is positioned properly */
 .bar-title .button-prev,
@@ -368,8 +295,10 @@ a {
   border-radius: 30px 100px 2px 40px / 2px 40px 30px 100px;
   content: '';
   box-shadow: inset 1px 0 #0e5895, inset 0 1px #0e5895;
-  -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(#000), color-stop(.33, #000), color-stop(.5, transparent), to(transparent));
-                  mask-image: gradient(linear, left top, right bottom, from(#000), color-stop(.33, #000), color-stop(.5, transparent), to(transparent));
+  -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(#000), color-stop(.33, #000), 
+                                        color-stop(.5, transparent), to(transparent));
+    mask-image: gradient(linear, left top, right bottom, from(#000), color-stop(.33, #000), 
+                          color-stop(.5, transparent), to(transparent));
 }
 .bar-title .button-prev:before {
   left: -5px;
