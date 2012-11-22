@@ -55,7 +55,7 @@ PAGE 4
 */
 .but-none-right {
 	position: relative;
-	right: 40px;
+	right: 1.7em;
 	display: inline-block;
 	padding: 4px 12px;
 	margin: 0;
@@ -71,6 +71,10 @@ PAGE 4
 	/* border-radius: 3px; */
 	/* box-shadow: 0 1px rgba(255, 255, 255, .25); */
 }
+	.but-none-right div {
+		float: left;
+		right: 1.4em;
+	}
 .but-none-left {
 	position: relative;
 	display: inline-block;
