@@ -6,7 +6,7 @@
 
     <?php include'../assets/include.html' ?>
   </head>
-  <body>
+  <body ontouchstart>
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title game-bar">
   	<div>
@@ -21,7 +21,6 @@
 		<div class="team-score" style="right: 1.1em; float: left;">4</div>
 	</div>
   </header>
-
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
 	  <div class="content" style="top: 70px; height: 100%">
 		<div style="width: 49%; height: auto; float: left; border-right: 1px solid;">

@@ -5,12 +5,11 @@
     <title>ScoreKeeper - Sport Selector</title>
     <?php include'../assets/include.html' ?>
   </head>
-  <body>
+  <body ontouchstart>
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
     <h1 class="title">ScoreKeeper</h1>
   </header>
-
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
   <div class="content">
   	<div class="content-padded">

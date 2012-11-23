@@ -6,15 +6,13 @@
 
     <?php include'../assets/include.html' ?>
   </head>
-  <body>
-
+  <body ontouchstart>
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
 	<a href="soccer.html" class="button-prev" data-transition="slide-out">Back</a>
 	<h1 class="title">Team A</h1>
 	<a class="button-next" href="tracker.html" data-transition="slide-in">Next</a>
   </header>
-
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
 	  <div class="content">
 		<form style="padding: 10px;">
