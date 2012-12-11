@@ -19,14 +19,9 @@ $(document).ready(function() {
 	var arr1 = ["player1", "player2", "player3", "player4", "player5"];
 	for (var i = 1; i < 101; i++) { //loop creates the jersey numbers
 		$.each(arr1, function() {
-			$("#" + this).append("<option> " + i + " </option>");
+			$("#" + this).append("<option" + "value=" + i + "> " + i + " </option>");
 		})
 	}			
-	
-	//this loop is for player creation 
-	// for (var i = 1; i < 10; i++) {
-	// 	$(".list").append("<li>"+"<a>"+"Player Name"+"<span>" + "</span>" + "<span> CF"+"</span>"+"</a>"+"</li>");	//creates the list		
-	// }
 	
 	$(".list li a").each(function() { // adds link to a, for popover
 		var _href = $(this).attr("href");

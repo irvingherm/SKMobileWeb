@@ -10,9 +10,7 @@
   <header class="bar-title">
 	<a class="button-prev" href="home.php" data-transition="slide-out">Back</a>
 	<h1 class="title">Soccer</h1>
-	<!-- <a class="button-next" href="#" data-transition="slide-in"></a> -->
   </header>
-  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
 	  <div class="content">
 	  	<form style="padding: 10px;" action="insertScTeam.php" method="post">
 		  <div class="input-group" style="border-radius">
