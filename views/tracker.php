@@ -1,3 +1,11 @@
+<?php 
+	$con = mysql_connect("localhost","root","root");
+    if (!$con) {
+        die('Could not connect: ' . mysql_error());
+    }
+    mysql_select_db("ScoreKeeper", $con);
+	$players = mysql_query('SELECT * FROM player WHERE team_id="4" LIMIT 50'); 
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -29,6 +37,12 @@
 		</div>
 		<div style="width: 49%; height: auto; float: left;">
 			<ul class="list">
+				<?php 
+                    for($i=0; $i<=20; $i++) { 
+                        $row = mysql_fetch_array($players);
+                        include("playerHolder.php"); 
+                    } 
+                ?>
 			</ul>
 		</div>
 	  </div>
@@ -44,3 +58,6 @@
 	</div>
   </body>
 </html>
+<?php 
+	mysql_close($con);
+?>

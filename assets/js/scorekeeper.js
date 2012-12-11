@@ -6,7 +6,7 @@ $(document).ready(function() {
 	}
 	
 	//this map and loop is for the player position 
-	dropdown_values = {"1":"CF", "2":"CM"," 3":"LWB", "4":"CB", "5":"SW", "6":"RWB", "7":"GK"}; //map to store position
+	dropdown_values = {"CF":"CF", "CM":"CM"," LWB":"LWB", "CB":"CB", "SW":"SW", "RWB":"RWB", "GK":"GK"}; //map to store position
 	var arr2 = ["postions1", "postions2", "postions3", "postions4", "postions5"];
 	$.each(arr2, function () {
 		var sb = this;
@@ -24,9 +24,9 @@ $(document).ready(function() {
 	}			
 	
 	//this loop is for player creation 
-	for (var i = 1; i < 10; i++) {
-		$(".list").append("<li>"+"<a>"+"Player Name"+"<span>" + "</span>" + "<span> 1"+"</span>"+"</a>"+"</li>");	//creates the list		
-	}
+	// for (var i = 1; i < 10; i++) {
+	// 	$(".list").append("<li>"+"<a>"+"Player Name"+"<span>" + "</span>" + "<span> CF"+"</span>"+"</a>"+"</li>");	//creates the list		
+	// }
 	
 	$(".list li a").each(function() { // adds link to a, for popover
 		var _href = $(this).attr("href");

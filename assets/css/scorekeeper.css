@@ -46,6 +46,10 @@ PAGE 2
 	-webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, .4);
 	-moz-box-shadow: inset 0 1px 1px rgba(255, 255, 255, .4);
 }
+input[type='submit'] {
+	padding: 10px;
+	width: 100%;
+}
 /* 
 PAGE 3 
 */

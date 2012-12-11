@@ -10,19 +10,19 @@
   <header class="bar-title">
 	<a class="button-prev" href="home.php" data-transition="slide-out">Back</a>
 	<h1 class="title">Soccer</h1>
-	<a class="button-next" href="player.php" data-transition="slide-in">Next</a>
+	<!-- <a class="button-next" href="#" data-transition="slide-in"></a> -->
   </header>
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
 	  <div class="content">
-		<form style="padding: 10px;">
+	  	<form style="padding: 10px;" action="insertScTeam.php" method="post">
 		  <div class="input-group" style="border-radius">
 		    <div class="input-row">
 		      <label>Home Team</label>
-		      <input type="text" placeholder="Home Team Name">
+		      <input type="text" name="name" placeholder="Home Team Name">
 		    </div>
 		    <div class="input-row">
 		      <label>Away Team</label>
-		      <input type="text" placeholder="Away Team Name">
+		      <input type="text" name="name2" placeholder="Away Team Name">
 		    </div>
 		    <div class="input-row divider-container">
 		    	<label class="divider">Time</label>
@@ -37,6 +37,7 @@
 		  	  </select>
 		    </div>
 		  </div>
+		    <input class="button-block" type="submit" value="Next">
 		</form>
 	  </div>
   </body>
