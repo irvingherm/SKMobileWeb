@@ -57,6 +57,9 @@ PAGE 3
 /* 
 PAGE 4 
 */
+header div a {
+	font-size: 40px;
+}
 .but-none-right {
 	position: relative;
 	right: 1.7em;
@@ -67,7 +70,6 @@ PAGE 4
 	vertical-align: top;
 	cursor: pointer;
 	z-index: 10;
-	font-size: 20px;
 	line-height: 23px;
 	color: white;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
@@ -86,7 +88,6 @@ PAGE 4
 	margin: 0px;
 	font-weight: bold;
 	z-index: 10;
-	font-size: 20px;
 	line-height: 23px;
 	color: white;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
