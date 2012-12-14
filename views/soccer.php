@@ -8,8 +8,8 @@
   <body ontouchstart>
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-	<a class="button-prev" href="home.php" data-transition="slide-out">Back</a>
-	<h1 class="title">Soccer</h1>
+	<a class="button-prev" href="main.php" data-transition="slide-out">Back</a>
+	<h1 class="title">Basketball</h1>
   </header>
 	  <div class="content">
 	  	<form style="padding: 10px;" action="insertScTeam.php" method="post">
@@ -27,7 +27,7 @@
 		    </div>
 		    <div class="input-row">
 		      <label>Intervals:</label>
-		      <span style="float: right; margin-right: 25px; font-size: 18px; margin-top: 7px;">2</span>
+		      <span style="float: right; margin-right: 25px; font-size: 18px; margin-top: 7px;">4</span>
 		    </div>
 		    <div class="input-row">
 		      <label>Interval Time:</label>

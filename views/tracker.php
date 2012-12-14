@@ -4,7 +4,7 @@
         die('Could not connect: ' . mysql_error());
     }
     mysql_select_db("ScoreKeeper", $con);
-	$players = mysql_query('SELECT * FROM player WHERE team_id="4" LIMIT 50'); 
+	$players = mysql_query('SELECT id FROM player ORDER BY id DESC  LIMIT 50'); 
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,14 +31,20 @@
   </header>
   <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
 	  <div class="content" style="top: 70px; height: 100%">
-		<div style="width: 49%; height: auto; float: left; border-right: 1px solid;">
-			<ul class="list">
-			</ul>
-		</div>
-		<div style="width: 49%; height: auto; float: left;">
+		<div style="width: 49%; height: 100%; float: left; border-right: 1px solid #000;">
 			<ul class="list">
 				<?php 
-                    for($i=0; $i<=20; $i++) { 
+                    for($i=0; $i<=5; $i++) { 
+                        $row = mysql_fetch_array($players);
+                        include("playerHolder.php"); 
+                    } 
+                ?>
+			</ul>
+		</div>
+		<div style="width: 49%; height: 100%; float: left;">
+			<ul class="list">
+				<?php 
+                    for($i=0; $i<=5; $i++) { 
                         $row = mysql_fetch_array($players);
                         include("playerHolder.php"); 
                     } 

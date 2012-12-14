@@ -17,7 +17,7 @@
     </div>
     <ul class="list inset" style="margin-top: 30px;">
       <li>
-        <a href="#">
+        <a href="tennis.php">
         	  <img src="http://icons.iconarchive.com/icons/icons-land/sport/256/Tennis-Ball-icon.png" alt="tennis" />
           	<strong class="sport-name">Tennis</strong>
           	<span class="chevron"></span>
@@ -25,14 +25,14 @@
       </li>
       <li>
         <!-- A soccer.php link -->
-        <a href="soccer.php" data-transition="slide-in">
+        <a href="#" data-transition="slide-in">
         	  <img src="http://icons.iconarchive.com/icons/icons-land/sport/256/Soccer-Ball-icon.png" alt="soccer" />
           	<strong class="sport-name">Soccer</strong>
           	<span class="chevron"></span>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="soccer.php">
         	  <img src="http://icons.iconarchive.com/icons/icons-land/sport/256/Basketball-Ball-icon.png" alt="basketball" />
           	<strong class="long-name">Basketball</strong>
           	<span class="chevron"></span>

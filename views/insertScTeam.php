@@ -5,8 +5,8 @@
     }
     mysql_select_db("ScoreKeeper", $con);
 
-    $insert="INSERT INTO team(name, sport_id) VALUES ('$_POST[name]','2')";
-    $sql="INSERT INTO team (name, sport_id) VALUES ('$_POST[name2]', '2')";
+    $insert="INSERT INTO team(name, sport_id) VALUES ('$_POST[name]','3')";
+    $sql="INSERT INTO team (name, sport_id) VALUES ('$_POST[name2]', '3')";
 
     if (!mysql_query($insert, $con)) {
         die('Error: ' . mysql_error());

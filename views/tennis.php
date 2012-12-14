@@ -8,7 +8,7 @@
   <body ontouchstart>
   <!-- Make sure all your bars are the first things in your <body> -->
   <header class="bar-title">
-	<a class="button-prev" href="home.php" data-transition="slide-out">Back</a>
+	<a class="button-prev" href="main.php" data-transition="slide-out">Back</a>
 	<h1 class="title">Tennis</h1>
   </header>
 	<div class="content">

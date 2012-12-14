@@ -5,11 +5,11 @@
     }
     mysql_select_db("ScoreKeeper", $con);
 
-    $insert0="INSERT INTO player(name, position, team_id) VALUES ('$_POST[name1]', '$_POST[position1]', '4')";
-    $insert1="INSERT INTO player(name, position, team_id) VALUES ('$_POST[name2]', '$_POST[position2]', '4')";
-    $insert2="INSERT INTO player(name, position, team_id) VALUES ('$_POST[name3]', '$_POST[position3]', '4')";
-    $insert3="INSERT INTO player(name, position, team_id) VALUES ('$_POST[name4]', '$_POST[position4]', '4')";
-    $insert4="INSERT INTO player(name, position, team_id) VALUES ('$_POST[name5]', '$_POST[position5]', '4')";
+    $insert0="INSERT INTO player(name, position, team_id) VALUES ('$_POST[name1]', '$_POST[position1]', '5')";
+    $insert1="INSERT INTO player(name, position, team_id) VALUES ('$_POST[name2]', '$_POST[position2]', '5')";
+    $insert2="INSERT INTO player(name, position, team_id) VALUES ('$_POST[name3]', '$_POST[position3]', '5')";
+    $insert3="INSERT INTO player(name, position, team_id) VALUES ('$_POST[name4]', '$_POST[position4]', '5')";
+    $insert4="INSERT INTO player(name, position, team_id) VALUES ('$_POST[name5]', '$_POST[position5]', '5')";
 
     if (!mysql_query($insert0, $con)) {
         die('Error: ' . mysql_error());
