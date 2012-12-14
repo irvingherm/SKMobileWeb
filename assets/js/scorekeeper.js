@@ -4,6 +4,10 @@ $(document).ready(function() {
 		$("#time").append("<option> " + i + " </option>");
 		i = i + 4;
 	}
+	for (var i = 1; i < 6; i++) {
+		$("#set").append("<option>" + i + "</option>");
+		i = i + 1;
+	}
 	
 	//this map and loop is for the player position 
 	dropdown_values = {"CF":"CF", "CM":"CM"," LWB":"LWB", "CB":"CB", "SW":"SW", "RWB":"RWB", "GK":"GK"}; //map to store position
@@ -35,5 +39,20 @@ $(document).ready(function() {
 	for (var i = 1; i < 7; i++) {
 		$("#stats").append("<a> Stats " + i + "</a>");
 		$("#stats a").addClass("button"); //adds a class to the created <a>
-	}		
+	}
+
+	/*
+	*
+	*	STORE INPUTS
+	*/
+	$("input.button-block").click(function(){
+		$("#h-player").keyup(function(){
+			var value = $(this).val();
+			console.log(value);
+		}).keyup();
+		$("#a-player").keyup(function(){
+			var value = $(this).val();
+			console.log(value);
+		}).keyup();
+	});	
 });		
